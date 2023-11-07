@@ -1,6 +1,7 @@
 class Layout {
     constructor(){
         this.menuIsOpen = false
+        this.subMenuIsOpen = false
     }
     removeToggleHoverMobile(){
         let screenSize = window.innerWidth
@@ -19,7 +20,8 @@ class Layout {
         let breakPoint = 1280
         if(screenSize <= breakPoint){
             findUl.slideToggle()
-            if(findUl.is(":visible")){
+            this.subMenuIsOpen = !this.subMenuIsOpen
+            if(this.subMenuIsOpen){
                 thisEl.find('.toggle-drop .fa-plus').attr('class','fa-solid fa-minus')
             }else{
                 thisEl.find('.toggle-drop .fa-minus').attr('class','fa-solid fa-plus')
