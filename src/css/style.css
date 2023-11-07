@@ -1,0 +1,100 @@
+header .container ul li .fa-plus {
+  display: none;
+}
+
+.toggle-menu {
+  display: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+[multiple]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus, [type=url]:focus, [type=week]:focus, select:focus, textarea:focus {
+  outline-offset: 0;
+  border-color: rgba(28, 99, 242, 0);
+}
+
+@media (max-width: 1555px) {
+  header .container {
+    gap: 10px;
+  }
+  header .container ul {
+    gap: 25px;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    max-width: calc(100% - 20px) !important;
+  }
+  header {
+    height: 142px !important;
+    position: relative;
+  }
+  header .container ul {
+    position: absolute;
+    flex-direction: column;
+    background: #e5e7eb;
+    top: 62px;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px 0;
+    left: 0;
+    z-index: 100;
+    gap: 0 !important;
+    display: none;
+  }
+  header .container ul.show {
+    display: flex !important;
+  }
+  header .container ul li {
+    height: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.0509803922);
+    padding-left: 13px;
+    position: relative;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  header .container ul li .toggle-drop {
+    height: 100%;
+    width: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.0509803922);
+    border-top: none;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .container ul li i.fa-chevron-down {
+    display: none;
+  }
+  header .container ul li i.fa-plus {
+    display: block;
+  }
+  header .container ul li a {
+    height: 59px;
+  }
+  header .container ul li ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+  header .container ul li ul li {
+    width: 100%;
+    border-bottom: none;
+  }
+  header .container form {
+    position: absolute;
+    width: calc(100% - 15px);
+    border: 0;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .toggle-menu {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */

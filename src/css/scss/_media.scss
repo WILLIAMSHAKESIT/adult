@@ -1,0 +1,93 @@
+@media (max-width:1555px){
+    header{
+        .container{
+            gap: 10px;
+            ul{
+                gap: 25px;
+            }
+            .logo-wrapper{
+    
+            }
+        }
+    }
+}
+@media (max-width:1280px){
+    .container{
+        max-width: calc(100% - 20px) !important;
+    }
+    header{
+        height: 142px !important;
+        position: relative;
+        .container{
+            ul{
+                position: absolute;
+                flex-direction: column;
+                background: #e5e7eb;
+                top: 62px;
+                width: 100%;
+                height: -moz-fit-content;
+                height: fit-content;
+                padding: 10px 0;
+                left: 0;
+                z-index: 100;      
+                gap: 0 !important;
+                display: none;    
+                &.show{
+                    display: flex !important;
+                }      
+                li{
+                    height: 100%;
+                    height: 60px;
+                    border-bottom: 1px solid #0000000d;
+                    padding-left: 13px;
+                    position: relative;
+                    height: fit-content;
+                    .toggle-drop{
+                        height: 100%;
+                        width: 50px;
+                        border: 1px solid #0000000d;
+                        border-top: none;
+                        border-bottom: none;
+                        display: flex; 
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    i{
+                        &.fa-chevron-down{
+                            display: none;
+                        }
+                        &.fa-plus{
+                            display: block;
+                        }
+                    }
+                    a{
+                        height: 59px;
+                    }
+                    ul{
+                        // display: block;
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        display: none;
+                        li{
+                            width: 100%;
+                            border-bottom:none;
+                        }
+                    }
+                }  
+            }
+            form{
+                position: absolute;
+                width: calc(100% - 15px);
+                border: 0;
+                bottom: 16px;
+                left: 50%;
+                transform: translateX(-50%);            
+            }
+        }
+    }
+    .toggle-menu{
+        display: block;
+    }
+}

@@ -1,0 +1,19 @@
+header{
+    .container{
+        ul{
+            li{
+                .fa-plus{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.toggle-menu{
+    display: none;
+    user-select: none;
+}
+[multiple]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus, [type=url]:focus, [type=week]:focus, select:focus, textarea:focus{
+    outline-offset:0;
+    border-color: #1c63f200;
+}
